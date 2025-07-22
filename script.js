@@ -15,6 +15,31 @@ updateCssTheme();
 
 setInterval(updateCssTheme, 60000); 
 
-// submit form and print to html page
+// print date to form - read only 
+
+function insertCurrentDate() {
+const today = new Date();
+const yyyy = today.getFullYear();
+let mm = today.getMonth() + 1; // Months start at 0!
+let dd = today.getDate();
+
+if (dd < 10) dd = '0' + dd;
+if (mm < 10) mm = '0' + mm;
+
+const formattedToday = dd + '/' + mm + '/' + yyyy;
+
+const currentDateInput = document.getElementById('currentDateInput'); 
+currentDateInput.innerText= formattedToday; 
+}
+
+insertCurrentDate();
+
+setInterval(insertCurrentDate, 60000);
+
+// submit form 
+
+// get form output
+
+// print to page 
 
 // style page 
