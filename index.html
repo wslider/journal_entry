@@ -12,41 +12,49 @@
         <section>
             
             <div class="formContainer">
-                <form action="/submit" method="get">
+                <form id="form" action="submit" method="get">
                     <fieldset>
                         <legend><h2>Journal Entry: </h2></legend>
                         <h3 id="currentDate"></h3>
                         <div class="formGroup1">
-                            <label></label>
-                            <input>
+                            <label for="name">Name or Alias:</label>
+                            <input type="text" id="name" name="name">
                         </div>
-
                         <div class="formGroup1">
-                            <label></label>
-                            <input>
+                            <label for="highlight">Highlight</label>
+                            <textarea class="textarea" type="text" id="highlight" name="highlight" placeholder="What was the highlight of your day?"></textarea>
                         </div>
-
                         <div class="formGroup1">
-                            <label></label>
-                            <input>
+                            <label for="wins">Wins</label>
+                            <textarea class="textarea" type="text" id="wins" name="wins" placeholder="List your Wins"></textarea>
                         </div>
-
                         <div class="formGroup1">
-                            <label></label>
-                            <input>
+                            <label for="gratitude">Gratitude</label>
+                            <textarea class="textarea" type="text" id="gratitude" name="gratitude" placeholder="what are you thankful for today?"></textarea>
                         </div>
-
                         <div class="formGroup1">
-                            <label></label>
-                            <input>
+                            <label for="lessons">Lessons</label>
+                            <textarea class="textarea" type="text" id="lessons" name="lessons" placeholder="What did you learn?"></textarea>
                         </div>
-
+                        <div class="formGroup1">
+                            <label for="inspiration">Inspiration</label>
+                            <textarea class="textarea" type="text" id="inspiration" name="inspiration"></textarea>
+                        </div>
+                        <div>
+                            <label for="interesting">Did you have any interesting everiences?</label>
+                            <textarea class="textarea" type="text" id="interesting" name="interesting" placeholder="dreams? sycronicities? cryptid sightings?"></textarea>
+                        </div>
+                        <div class="formGroup1">
+                            <label for="steps">How many steps did you take?</label>
+                            <input type="number" id="steps" name="steps" min="0">
+                        </div>
+                        <button type="submit" class="formGroup1">Submit</button>
                     </fieldset>
                 </form>
             </div>
         </section>
         <section>
-            <div class="formContainer" id="output"></div>
+            <div class="formContainer2" id="output"></div>
         </section>
     </main>
     <footer>

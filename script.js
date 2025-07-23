@@ -25,7 +25,12 @@ insertDate();
 
 setInterval(insertDate, 60000);
 
-// submit form 
+// form and output variables
+
+const form = document.getElementById('form');
+const output = document.getElementById('output');
+
+
 
 // get form output
 

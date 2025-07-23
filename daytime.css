@@ -21,6 +21,10 @@ h1 {
   padding: 15px;
 }
 
+.formContainer .textarea {
+  width:100%;  
+}
+
 .formContainer input {
   width: 100%;
   box-sizing: border-box;
