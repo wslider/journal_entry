@@ -9,13 +9,13 @@
 <body>
     <main>
         <h1>Journal</h1>
-        <h2 id="currentDate"></h2>
         <section>
             
-            <div class="formContainer1">
+            <div class="formContainer">
                 <form action="/submit" method="get">
                     <fieldset>
-                        <legend>Journal Entry</legend>
+                        <legend><h2>Journal Entry: </h2></legend>
+                        <h3 id="currentDate"></h3>
                         <div class="formGroup1">
                             <label></label>
                             <input>
@@ -44,6 +44,9 @@
                     </fieldset>
                 </form>
             </div>
+        </section>
+        <section>
+            <div class="formContainer" id="output"></div>
         </section>
     </main>
     <footer>

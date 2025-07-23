@@ -5,7 +5,7 @@ function updateCssTheme (){
     const now = new Date();
     const hour = now.getHours();
     linkElement = document.getElementById('customCssStyle');
-    if (hour >= 6 && hour <= 16) {linkElement.href='styles.css';
+    if (hour >= 6 && hour <= 16) {linkElement.href='daytime.css';
     }
     else if (hour <20) {linkElement.href='evening.css';} 
     else {linkElement.href='night.css'}
