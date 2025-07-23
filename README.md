@@ -27,5 +27,5 @@
 ![alt text](image-1.png)
 
 
-## Note:
+## AI Use Note:
 * Grok 3 consulted for possible solutions in creating form submission to html output in the script.js file.  
