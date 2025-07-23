@@ -37,7 +37,7 @@ form.addEventListener('submit', function(event) {
     const gratitude = formData.get('gratitude');
     const lessons = formData.get('lessons');
     const inspiration = formData.get('inspiration');
-    const interesting = formData.get('interesting');
+    const experiences = formData.get('experiences');
     const steps = formData.get('steps');
     const currentDate = new Date().toLocaleString();
 
@@ -49,7 +49,7 @@ form.addEventListener('submit', function(event) {
         <h3>Gratitude:${gratitude}</h3>
         <h3>Lessons:${lessons}</h3>
         <h3>Inspiration:${inspiration}</h3>
-        <h3>Intersting:${interesting}</h3>
+        <h3>Experiences:${experiences}</h3>
         <h3>Steps:${steps}</h3>
     `;});
 
