@@ -15,26 +15,15 @@ updateCssTheme();
 
 setInterval(updateCssTheme, 60000); 
 
-// print date to form - read only 
+// print date to page
 
-function insertCurrentDate() {
-const today = new Date();
-const yyyy = today.getFullYear();
-let mm = today.getMonth() + 1; // Months start at 0!
-let dd = today.getDate();
-
-if (dd < 10) dd = '0' + dd;
-if (mm < 10) mm = '0' + mm;
-
-const formattedToday = dd + '/' + mm + '/' + yyyy;
-
-const currentDateInput = document.getElementById('currentDateInput'); 
-currentDateInput.innerText= formattedToday; 
+function insertDate(){
+document.getElementById("currentDate").innerText = new Date();
 }
 
-insertCurrentDate();
+insertDate();
 
-setInterval(insertCurrentDate, 60000);
+setInterval(insertDate, 60000);
 
 // submit form 
 
