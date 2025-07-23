@@ -23,5 +23,9 @@
 * add location to notes 
 
 ## 📷 Don't Forget Those Adentures and Moments of Inspiration ...  
-- capture them before they get away! 
+* capture them before they get away! 
 ![alt text](image-1.png)
+
+
+## Note:
+* Grok 3 consulted for possible solutions in creating form submission to html output in the script.js file.  

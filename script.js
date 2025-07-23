@@ -1,6 +1,3 @@
-// custom css style sheet for time of day
-// see Detour 365 project 
-
 function updateCssTheme (){
     const now = new Date();
     const hour = now.getHours();
@@ -25,7 +22,7 @@ insertDate();
 
 setInterval(insertDate, 60000);
 
-// form and output variables
+// form and output 
 
 const form = document.getElementById('form');
 const output = document.getElementById('output');
@@ -35,27 +32,27 @@ form.addEventListener('submit', function(event) {
 
     const formData = new FormData(form);
     const name = formData.get('name');
-    const highlight =formData.get('highlight');
-    const wins =formData.get('wins'); 
-    const gratitude =formData.get('gratitude');
-    const inspiration =formData.get('inspiration');
-    const intersting =formData.get('intersting');
-    const steps =formData.get('steps');
+    const highlight = formData.get('highlight');
+    const wins = formData.get('wins'); 
+    const gratitude = formData.get('gratitude');
+    const lessons = formData.get('lessons');
+    const inspiration = formData.get('inspiration');
+    const interesting = formData.get('interesting');
+    const steps = formData.get('steps');
+    const currentDate = new Date().toLocaleString();
 
     output.innerHTML = `
-        <h2>Journal Entry:</h2><h2 id="currentDate"></h2>
+        <h2>Journal Entry: </h2><h2>${currentDate}</h2>
         <h3>Name: ${name}</h3>
         <h3>Highlight: ${highlight}</h3>
-        <h3></h3>
-        <h3></h3>
-        <h3></h3>
-        <h3></h3>
-        <h3></h3>
+        <h3>Wins: ${wins}</h3>
+        <h3>Gratitude:${gratitude}</h3>
+        <h3>Lessons:${lessons}</h3>
+        <h3>Inspiration:${inspiration}</h3>
+        <h3>Intersting:${interesting}</h3>
+        <h3>Steps:${steps}</h3>
     `;});
 
 
-// get form output
 
-// print to page 
 
-// style page 
