@@ -41,17 +41,16 @@ form.addEventListener('submit', function(event) {
     const steps = formData.get('steps');
     const currentDate = new Date().toLocaleString();
 
-    output.innerHTML = `
-        <h2>Journal Entry: </h2><h2>${currentDate}</h2>
-        <h3>Name: ${name}</h3>
-        <h3>Highlight: ${highlight}</h3>
-        <h3>Wins: ${wins}</h3>
-        <h3>Gratitude:${gratitude}</h3>
-        <h3>Lessons:${lessons}</h3>
-        <h3>Inspiration:${inspiration}</h3>
-        <h3>Experiences:${experiences}</h3>
-        <h3>Steps:${steps}</h3>
-    `;});
+document.getElementById('outputDate').innerText = currentDate;
+document.getElementById('outputName').innerText = `Name: ${name}`;
+document.getElementById('outputHighlight').innerText = `Highlight: ${highlight}`;
+document.getElementById('outputWins').innerText = `Wins: ${wins}`;
+document.getElementById('outputGratitude').innerText = `Gratitude: ${gratitude}`;
+document.getElementById('outputLessons').innerText = `Lessons: ${lessons}`;
+document.getElementById('outputInspiration').innerText = `Inspiration: ${inspiration}`;
+document.getElementById('outputExperiences').innerText = `Experiences: ${experiences}`;
+document.getElementById('outputSteps').innerText = `Steps: ${steps}`;
+    ;});
 
 
 
